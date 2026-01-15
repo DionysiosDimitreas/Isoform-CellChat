@@ -1,0 +1,27 @@
+Package: IsoCellChat
+Type: Package
+Title: Domain-Aware Isoform-Level CellChat Analysis
+Version: 0.1.0
+Authors@R: 
+    person("Your", "Name", email = "your.email@example.com", role = c("aut", "cre"))
+Description: Pipeline for analyzing cell-cell communication at the isoform level.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.3
+Depends:
+    R (>= 4.0.0),
+    CellChat,
+    SingleCellExperiment,
+    dplyr,
+    ggplot2
+Imports: 
+    methods,
+    utils,
+    stats,
+    stringr,
+    Matrix,
+    scater,
+    biomaRt
+Remotes:
+    jinworks/CellChat
