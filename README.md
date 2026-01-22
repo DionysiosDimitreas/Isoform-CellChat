@@ -65,6 +65,9 @@ cc_pc <- results$cc_pc
 # DeepLoc Weighted Gene-level
 cc_deeploc <- results$cc_deeploc
 
+# Final Isoform-Level Analysis (Domain Aware)
+# Note: Full integration is in progress. See the "Domain-Aware Analysis" section below.
+# cc_isoform <- results$cc_domain
 ```
 
 ## 🔬 Pipeline Workflow
@@ -78,7 +81,10 @@ The `run_mega_cellchat_pipeline` function performs the following steps automatic
 * **PC Analysis:** Runs CellChat on the protein-coding filtered dataset.
 * **DeepLoc Weighting:** Down-weights transcripts predicted to be retained intracellularly (not secreted/membrane-bound).
 * **DeepLoc Analysis:** Runs CellChat on the DeepLoc-weighted dataset.
-
+* **Domain-Aware Analysis (In Progress):**
+    * The full integration of domain-aware isoform inference is currently being developed for this package.
+    * **Run Separately:** For now, you can run this specific analysis using our standalone repository here:
+    * **[https://github.com/DionysiosDimitreas/Domain-aware-Cell-Cell-Communication][(https://github.com/DionysiosDimitreas/Domain-aware-Cell-Cell-Communication)]**
 ## 🛠️ Troubleshooting
 
 ### "CRITICAL ERROR: 0 Matches found"
