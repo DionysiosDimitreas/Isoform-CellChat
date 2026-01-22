@@ -4,6 +4,8 @@ library(SingleCellExperiment)
 library(IsoCellChat)
 library(zellkonverter)
 
+file_path <- "data/GSE116672_only.h5"
+
 # CREATE SCE OBJECT
 expression_data <- HDF5Array(file_path, name = "data/expression")
 
