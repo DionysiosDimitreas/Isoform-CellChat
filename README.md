@@ -8,7 +8,7 @@ You can install the development version of IsoCellChat from GitHub:
 
 ```r
 # install.packages("devtools")
-devtools::install_github("your_username/IsoCellChat")
+devtools::install_github("DionysiosDimitreas/IsoCellChat")
 ```
 
 ## 📋 Data Requirements
